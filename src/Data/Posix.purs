@@ -1,6 +1,6 @@
 module Data.Posix where
 
-import Prelude (Show, show, (<>))
+import Prelude (Show, show, (<>), Ord, compare, Eq, eq)
 import Data.Function (on)
 
 data Signal

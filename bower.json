@@ -7,6 +7,10 @@
     "output"
   ],
   "dependencies": {
-    "purescript-console": "^0.1.0"
+    "purescript-prelude": "~0.1.3",
+    "purescript-functions": "~0.1.0"
+  },
+  "devDependencies": {
+    "purescript-console": "~0.1.1"
   }
 }

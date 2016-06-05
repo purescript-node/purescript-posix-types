@@ -1,8 +1,8 @@
 module Data.Posix.Signal where
 
-import Prelude (Show, Eq, eq, Ord, compare)
+import Prelude (class Show, class Eq, eq, class Ord, compare)
 import Data.Function (on)
-import Data.Maybe (Maybe(Just, Nothing))
+import Data.Maybe (Maybe(..))
 
 data Signal
  = SIGABRT

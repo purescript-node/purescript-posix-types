@@ -12,11 +12,11 @@
     "url": "git://github.com/purescript-node/purescript-posix-types"
   },
   "dependencies": {
-    "purescript-prelude": "~0.1.3",
-    "purescript-functions": "~0.1.0",
-    "purescript-maybe": "~0.3.5"
+    "purescript-prelude": "^1.0.0",
+    "purescript-functions": "^1.0.0",
+    "purescript-maybe": "^1.0.0"
   },
   "devDependencies": {
-    "purescript-console": "~0.1.1"
+    "purescript-console": "^1.0.0"
   }
 }

@@ -1,6 +1,6 @@
 module Data.Posix where
 
-import Prelude (Show, show, (<>), Ord, compare, Eq, eq)
+import Prelude (class Show, show, (<>), class Ord, compare, class Eq, eq)
 import Data.Function (on)
 
 -- | A process ID.

@@ -1,49 +1,34 @@
 module Data.Posix where
 
-import Prelude (class Show, show, (<>), class Ord, compare, class Eq, eq)
-import Data.Function (on)
+import Prelude
+import Data.Newtype (class Newtype)
 
 -- | A process ID.
 newtype Pid = Pid Int
 
-runPid :: Pid -> Int
-runPid (Pid x) = x
+derive instance newtypePid :: Newtype Pid _
+derive newtype instance eqPid :: Eq Pid
+derive newtype instance ordPid :: Ord Pid
 
 instance showPid :: Show Pid where
   show (Pid pid) = "(Pid " <> show pid <> ")"
 
-instance eqPid :: Eq Pid where
-  eq = eq `on` runPid
-
-instance ordPid :: Ord Pid where
-  compare = compare `on` runPid
-
 -- | A group ID (for a process or a file).
 newtype Gid = Gid Int
 
-runGid :: Gid -> Int
-runGid (Gid x) = x
+derive instance newtypeGid :: Newtype Gid _
+derive newtype instance eqGid :: Eq Gid
+derive newtype instance ordGid :: Ord Gid
 
 instance showGid :: Show Gid where
   show (Gid gid) = "(Gid " <> show gid <> ")"
 
-instance eqGid :: Eq Gid where
-  eq = eq `on` runGid
-
-instance ordGid :: Ord Gid where
-  compare = compare `on` runGid
-
 -- | A user ID (for a process or a file).
 newtype Uid = Uid Int
 
-runUid :: Uid -> Int
-runUid (Uid x) = x
+derive instance newtypeUid :: Newtype Uid _
+derive newtype instance eqUid :: Eq Uid
+derive newtype instance ordUid :: Ord Uid
 
 instance showUid :: Show Uid where
   show (Uid uid) = "(Uid " <> show uid <> ")"
-
-instance eqUid :: Eq Uid where
-  eq = eq `on` runUid
-
-instance ordUid :: Ord Uid where
-  compare = compare `on` runUid

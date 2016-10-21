@@ -1,7 +1,6 @@
 module Data.Posix.Signal where
 
-import Prelude (class Show, class Eq, eq, class Ord, compare)
-import Data.Function (on)
+import Prelude
 import Data.Maybe (Maybe(..))
 
 data Signal
@@ -137,8 +136,5 @@ fromString s = case s of
 instance showSignal :: Show Signal where
   show = toString
 
-instance eqSignal :: Eq Signal where
-  eq = eq `on` toString
-
-instance ordSignal :: Ord Signal where
-  compare = compare `on` toString
+derive instance eqSignal :: Eq Signal
+derive instance ordSignal :: Ord Signal

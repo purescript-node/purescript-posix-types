@@ -1,19 +1,21 @@
 {
   "name": "purescript-posix-types",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "output"
-  ],
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git://github.com/purescript-node/purescript-posix-types"
   },
+  "ignore": [
+    "**/.*",
+    "bower_components",
+    "node_modules",
+    "output",
+    "test",
+    "bower.json",
+    "package.json"
+  ],
   "dependencies": {
     "purescript-prelude": "^2.1.0",
-    "purescript-functions": "^2.0.0",
     "purescript-maybe": "^2.0.0"
   },
   "devDependencies": {

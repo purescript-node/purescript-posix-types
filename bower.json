@@ -15,10 +15,10 @@
     "package.json"
   ],
   "dependencies": {
-    "purescript-prelude": "^3.0.0",
-    "purescript-maybe": "^3.0.0"
+    "purescript-prelude": "#compiler/0.12",
+    "purescript-maybe": "#compiler/0.12"
   },
   "devDependencies": {
-    "purescript-console": "^3.0.0"
+    "purescript-console": "#compiler/0.12"
   }
 }

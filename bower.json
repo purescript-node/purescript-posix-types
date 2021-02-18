@@ -3,7 +3,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/purescript-node/purescript-posix-types"
+    "url": "https://github.com/purescript-node/purescript-posix-types.git"
   },
   "ignore": [
     "**/.*",

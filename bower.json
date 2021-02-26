@@ -3,7 +3,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/purescript-node/purescript-posix-types"
+    "url": "https://github.com/purescript-node/purescript-posix-types.git"
   },
   "ignore": [
     "**/.*",
@@ -15,10 +15,10 @@
     "package.json"
   ],
   "dependencies": {
-    "purescript-prelude": "master",
-    "purescript-maybe": "master"
+    "purescript-maybe": "^5.0.0",
+    "purescript-prelude": "^5.0.0"
   },
   "devDependencies": {
-    "purescript-console": "master"
+    "purescript-console": "^5.0.0"
   }
 }

@@ -15,10 +15,10 @@
     "package.json"
   ],
   "dependencies": {
-    "purescript-maybe": "master",
-    "purescript-prelude": "master"
+    "purescript-maybe": "^6.0.0",
+    "purescript-prelude": "^6.0.0"
   },
   "devDependencies": {
-    "purescript-console": "master"
+    "purescript-console": "^6.0.0"
   }
 }
